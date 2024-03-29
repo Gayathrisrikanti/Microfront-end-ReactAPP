@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // Corrected import
+import ReactDOM from "react-dom/client"; 
 import StudentForm from './StudentForm';
 import "./index.css";
 
@@ -9,12 +9,10 @@ const App = () => (
     <div>Framework: react</div>
     <div>Language: JavaScript</div>
     <div>CSS: Empty CSS</div>
-    <StudentForm /> {/* Render the StudentForm component */}
+    <StudentForm /> 
   </div>
 );
 
-// Ensure your HTML has an element with the id 'app'
-// For ReactDOM version 18+
-const container = document.getElementById("app"); // Get the container element
-const root = ReactDOM.createRoot(container); // Correctly create a root
-root.render(<App />); // Use the root to render your app
+const container = document.getElementById("app"); 
+const root = ReactDOM.createRoot(container);
+root.render(<App />); 
